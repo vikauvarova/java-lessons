@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-  //      String str = scanner.nextLine();
-  //      System.out.println(str);
-        //       System.out.println("Введите число для подсчета формулы:");
-      //  int x = scanner.nextInt();
-       // int formula = x * x + 3 * x - 5;
-       // System.out.println(formula);
+       String str = scanner.nextLine();
+       System.out.println(str);
+       System.out.println("Введите число для подсчета формулы:");
+       int x = scanner.nextInt();
+       int formula = x * x + 3 * x - 5;
+       System.out.println(formula);
 
- //       int radius = scanner.nextInt();
-//        System.out.println("площадь круга:" + Math.PI * radius * radius);
-//        System.out.println("периметр круга:" + 2 * Math.PI * radius);
+       int radius = scanner.nextInt();
+       System.out.println("площадь круга:" + Math.PI * radius * radius);
+       System.out.println("периметр круга:" + 2 * Math.PI * radius);
 
         int money = scanner.nextInt();
         int pizzaPrice = 230;
