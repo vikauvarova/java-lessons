@@ -5,20 +5,21 @@ import java.util.Scanner;
 public class HW3 {
     public static void main(String[] args) {
         String basicJavaStr= "I study Basic Java!";
-        System.out.println(basicJavaStr.charAt(18));
+        System.out.println(basicJavaStr.charAt(basicJavaStr.length() -1));
         System.out.println(basicJavaStr.contains("Java"));
         System.out.println(basicJavaStr.replace('a', 'o'));
         System.out.println(basicJavaStr.toUpperCase());
         System.out.println(basicJavaStr.toLowerCase());
-        System.out.println(basicJavaStr.substring(14,18));
+        System.out.println(basicJavaStr.substring(basicJavaStr.indexOf("Java")));
 
         int a = 470;
         int b = 200;
         double percent = b * 100.0 / a;
         System.out.println(percent + "%");
 
-        String g = "g";
-        System.out.println(g.indexOf(g));
+        char g = 'g';
+        int askIndex = (int) g;
+        System.out.println(askIndex);
 
         Scanner name = new Scanner(System.in);
         System.out.println("Введите имя ");
@@ -33,7 +34,7 @@ public class HW3 {
 
         //Способ 2
         double number = 59.976;
-        int numberInt = (int) number;
+        int numberInt = (int) Math.floor(number);
         System.out.println(numberInt);
 
         int x = 475;
