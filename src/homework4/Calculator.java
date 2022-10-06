@@ -2,6 +2,7 @@ package homework4;
 
 public class Calculator {
     int add (int numberOne, int numberTwo, int numberThree){
+
         return numberOne + numberTwo + numberThree;
     }
 
