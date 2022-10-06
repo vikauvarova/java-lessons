@@ -20,6 +20,14 @@ public class HW5 {
         return  isReweOpen == true | isEdekaOpen == true;
     }
 
+    boolean device(double t1, double t2){
+        return  t1 > 100 & t2 < 100;
+    }
+
+    boolean divide(int x, int y){
+        return x % y == 0;
+    }
+
 
     public static void main(String[] args) {
         boolean isWeekend = true;
@@ -46,6 +54,15 @@ public class HW5 {
         Scanner scanner2 = new Scanner(System.in);
         String str = scanner2.nextLine();
         System.out.println(hw5.lengthMoreTen(str));
+
+        double t1 = 56.0;
+        double t2 = 100.5;
+        System.out.println(hw5.device(t1, t2));
+
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        System.out.println(hw5.divide(x,y));
 
     }
 
