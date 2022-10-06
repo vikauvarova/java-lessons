@@ -6,6 +6,7 @@ public class SumOfTwoRows {
 
 
     int returnSumOfTwoRows(){
+
         return Integer.valueOf(valueOne ) + Integer.valueOf(valueTwo);
     }
 
