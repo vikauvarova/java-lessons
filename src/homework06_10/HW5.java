@@ -1,6 +1,4 @@
-package homework5;
-
-import com.sun.jdi.IntegerValue;
+package homework06_10;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
