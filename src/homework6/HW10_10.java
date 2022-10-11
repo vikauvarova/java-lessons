@@ -1,4 +1,4 @@
-package homework10_10;
+package homework6;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -45,21 +45,21 @@ public class HW10_10 {
         System.out.println("Сколько Вы хотите купить печенья?");
         int amount = scanner.nextInt();
         System.out.println("Сколько у Вас есть денег?");
-        double money = scanner.nextInt();
-        if (money > (amount * cookiePrice)) {
+        double money = scanner.nextDouble();
+        if (money >= amount * cookiePrice) {
             System.out.println("Можно");
         } else {
             System.out.println("Нельзя");
         }
 
-        boolean coin = random.nextBoolean();
-        if(coin){
+        boolean isEagle = random.nextBoolean();
+        if(isEagle){
             System.out.println("орел");
         } else {
             System.out.println("решка");
         }
 
-        int numberCar = random.nextInt(10000)+1;
+        int numberCar = random.nextInt(10_000) + 1;
         boolean isLorry = random.nextBoolean();
         System.out.println("Номер машины " + numberCar);
         System.out.println("Это грузовик? " + isLorry);

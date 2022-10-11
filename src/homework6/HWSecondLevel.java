@@ -1,4 +1,4 @@
-package homework10_10;
+package homework6;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -42,9 +42,9 @@ public class HWSecondLevel {
         int numberTwo = scanner.nextInt();
         System.out.println("Введите число 3");
         int numberThree = scanner.nextInt();
-        if (numberOne > numberTwo && numberOne > numberThree || numberOne == numberTwo & numberOne >numberThree){
+        if (numberOne >= numberTwo && numberOne >= numberThree){
             System.out.println("Максимальное число " + numberOne);
-        } else if (numberTwo > numberOne && numberTwo > numberThree || numberTwo == numberThree & numberTwo >numberThree) {
+        } else if (numberTwo >= numberThree ) {
             System.out.println("Максимальное число " + numberTwo);
         } else {
             System.out.println("Максимальное число " + numberThree);
@@ -52,14 +52,14 @@ public class HWSecondLevel {
 
 
         Random random = new Random();
-        int n = random.nextInt(28800)+1;
-        System.out.println("До конца рабочего дня осталось " + n + " сек");
-        if (n / 3600 > 4 ) {
-            System.out.println("До конца рабочего дня осталось " + n / 3600 + " часов");
-        } else if (n / 3600 > 1) {
-            System.out.println("До конца рабочего дня осталось " + n / 3600 + " часа");
-        } else if (n / 3600 == 1) {
-            System.out.println("До конца рабочего дня остался " + n / 3600 + " час");
+        int sec = random.nextInt(28800)+1;
+        System.out.println("До конца рабочего дня осталось " + sec + " сек");
+        if (sec / 3600 > 4 ) {
+            System.out.println("До конца рабочего дня осталось " + sec / 3600 + " часов");
+        } else if (sec / 3600 > 1) {
+            System.out.println("До конца рабочего дня осталось " + sec / 3600 + " часа");
+        } else if (sec / 3600 == 1) {
+            System.out.println("До конца рабочего дня остался " + sec / 3600 + " час");
         } else {
             System.out.println("До конца рабочего дня осталось меньше часа");
         }
