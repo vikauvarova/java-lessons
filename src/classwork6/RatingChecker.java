@@ -1,4 +1,4 @@
-package classwork06_10;
+package classwork6;
 
 import java.util.Random;
 

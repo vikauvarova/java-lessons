@@ -1,7 +1,4 @@
-package lesson2;
-
-import java.security.spec.RSAOtherPrimeInfo;
-import java.util.Arrays;
+package classwork2;
 
 public class lesson2 {
     public static void main(String[ ] args) {

@@ -1,4 +1,4 @@
-package lesson2;
+package classwork2;
 
 public class Lesson2bin {
     public static void main(String[] args) {

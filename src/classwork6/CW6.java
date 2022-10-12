@@ -1,4 +1,4 @@
-package classwork06_10;
+package classwork6;
 
 public class CW6 {
 
