@@ -12,20 +12,20 @@ public class FirstLevel {
         }
 
         Scanner scanner = new Scanner(System.in);
-        int j =0;
+        int numberAt = scanner.nextInt();
         int numberFor = scanner.nextInt();
         int sum = 0;
-        while (j < numberFor){
-            j++;
-            if ( j % 2 == 0){
-                sum = sum + j;
+        while (numberAt < numberFor){
+            numberAt++;
+            if ( numberAt % 2 != 0){
+                sum = sum + numberAt;
             }
         }
         System.out.println("Сумма нечетных чисел в этом диапазне = " + sum);
 
 
         Random random = new Random();
-        int number = random.nextInt(900) + 99;
+        int number = random.nextInt(900) + 100;
         System.out.println("Случайное число" + number);
         int thirdNumber = number % 10; // 3
         int secondNumber = (number / 10) % 10;
