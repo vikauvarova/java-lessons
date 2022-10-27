@@ -8,23 +8,25 @@ public class Task1Level1 {
         int[] array = new int[10];
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i]=random.nextInt(100);
+            array[i]=random.nextInt(100) - 50;
         }
         System.out.println(Arrays.toString(array));
 
-        int max = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (max < array[i]) {
-                max = array[i];
-            }
-        }
-        System.out.println("Максимально число в массиве = " + max);
 
         for (int i = 0; i < array.length; i++) {
-            if(max == array[i]){
-                System.out.println("Это " + (i + 1) + "е число в массиве");
+            if (array[i] > 0) {
+                int firstPositiveNumber = i;
+                System.out.println("Первое полодительное сило в массиве = " + array[i]);
+                break;
             }
         }
+
+
+//        for (int i = 0; i < array.length; i++) {
+//            if(max == array[i]){
+//                System.out.println("Это " + (i + 1) + "е число в массиве");
+//            }
+//        }
 
     }
 }

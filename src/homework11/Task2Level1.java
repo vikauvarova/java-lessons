@@ -6,9 +6,11 @@ import java.util.Random;
 public class Task2Level1 {
     public static void main(String[] args) {
         Random random = new Random();
-        int[] arrayA = new int[100];
+        int size = 100;
+        int bound = 100;
+        int[] arrayA = new int[size];
         for (int i = 0; i < arrayA.length; i++) {
-                arrayA[i] = random.nextInt(100) + 1;
+                arrayA[i] = random.nextInt(bound);
         }
 
         int[] arrayAMultiplied = new int[100];

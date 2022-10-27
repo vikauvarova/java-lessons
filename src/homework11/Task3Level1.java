@@ -14,18 +14,18 @@ public class Task3Level1 {
         }
         System.out.println(Arrays.toString(temperature));
 
-        int minTemp = 0;
-        for (int i = 0; i < temperature.length ; i++) {
-            if (minTemp > temperature[i]){
-                minTemp = temperature[i];
-            }
-        }
-        for (int i = 0; i < temperature.length; i++) {
-            if(minTemp == temperature[i]){
-                System.out.println("Минимальная температура была в "+ (i + startMeasuring) + " часов");
-            }
 
+        int firstTemp = 0;
+        int time = 0;
+        for (int i = 0; i < temperature.length ; i++) {
+            if (temperature[i] < 0){
+                firstTemp = temperature[i];
+                time = i + startMeasuring;
+                System.out.println("Впервые температура упала ниже 0 в "+ time + " часов");
+                break;
+            }
         }
+        System.out.println("Температура в " + time + " часов была " + firstTemp + " градусов");
 
 
     }
