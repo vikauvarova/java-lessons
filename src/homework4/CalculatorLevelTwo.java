@@ -1,7 +1,7 @@
 package homework4;
 
 public class CalculatorLevelTwo {
-    static double add(double valueOne, double valueTwo){
+    static double sum(double valueOne, double valueTwo){
         return valueOne + valueTwo;
     }
 
@@ -17,12 +17,12 @@ public class CalculatorLevelTwo {
         return valueOne / valueTwo;
     }
 
-    public static void main(String[] args) {
-        CalculatorLevelTwo calculatorLevelTwo = new CalculatorLevelTwo();
-        System.out.println(CalculatorLevelTwo.add(10.5, 2));
-        System.out.println(CalculatorLevelTwo.minus(10.5,2));
-        System.out.println(CalculatorLevelTwo.multiply(10.5,2));
-        System.out.println(CalculatorLevelTwo.divide(10.5,2));
-    }
+//    public static void main(String[] args) {
+//        CalculatorLevelTwo calculatorLevelTwo = new CalculatorLevelTwo();
+//        System.out.println(CalculatorLevelTwo.sum(10.5, 2));
+//        System.out.println(CalculatorLevelTwo.minus(10.5,2));
+//        System.out.println(CalculatorLevelTwo.multiply(10.5,2));
+//        System.out.println(CalculatorLevelTwo.divide(10.5,2));
+//    }
 
 }
