@@ -10,5 +10,10 @@ public class Task4Level1 {
         System.out.println(surname[surname.length - 3]);
         System.out.println(surname[surname.length - 2]);
         System.out.println(surname[surname.length - 1]);
+// второй вариант
+        for (int i = 0; i < surname.length; i++) {
+            String surnames = surname[i];
+            System.out.println(surnames);
+        }
     }
 }
